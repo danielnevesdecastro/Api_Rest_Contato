@@ -42,7 +42,7 @@ public class ContatoController {
 		return contatoRepository.save(contato);
 	}
 
-	@DeleteMapping("/contato/{id}")
+	@DeleteMapping("/delete/{id}")
 	public void deleteContato(@PathVariable Long id) {
 		contatoRepository.deleteById(id);
 	}
